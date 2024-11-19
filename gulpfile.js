@@ -32,7 +32,7 @@ gulp.task('styles:build', function() {
     const parsePath = require('parse-filepath');
     const postcss = require('gulp-postcss');
     const rename = require("gulp-rename");
-    const sass = require('gulp-sass');
+    const sass = require('gulp-sass')(require('sass'));
 
     distPath = parsePath(package.style);
 
